@@ -13,21 +13,23 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://996136583.github.io/2024/06/20/hello-world/"/>
+    <link rel="canonical" href="https://996136583.github.io/2024/06/30/10mins-learn-how-to-use-globalhandler/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . Q">
+        <meta name="description" content="本文默认读者已了解java基础知识 如读者完全没有编程经验 建议先从基础开始实践 写过几行代码再回来阅读  若文章有误 甚至是巨大错误 希望得到您的批评与指正 最后感谢您的阅读 祝您生活愉快  全局异常处理器三步走 定义异常类 spring配置异常类 使用自定义异常  目录结构 12345678910111213src&#x2F;└── main&#x2F;    ├── java&#x2F;    │   └── &amp;lt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://996136583.github.io/2024/06/20/hello-world/index.html">
+<meta property="og:title" content="10分钟学会Java全局异常处理器">
+<meta property="og:url" content="https://996136583.github.io/2024/06/30/10mins-learn-how-to-use-globalhandler/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . Q">
+<meta property="og:description" content="本文默认读者已了解java基础知识 如读者完全没有编程经验 建议先从基础开始实践 写过几行代码再回来阅读  若文章有误 甚至是巨大错误 希望得到您的批评与指正 最后感谢您的阅读 祝您生活愉快  全局异常处理器三步走 定义异常类 spring配置异常类 使用自定义异常  目录结构 12345678910111213src&#x2F;└── main&#x2F;    ├── java&#x2F;    │   └── &amp;lt">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-20T06:25:06.038Z">
-<meta property="article:modified_time" content="2024-06-20T06:25:06.039Z">
+<meta property="article:published_time" content="2024-06-30T10:52:30.000Z">
+<meta property="article:modified_time" content="2024-06-30T10:55:55.170Z">
 <meta property="article:author" content="小小二康">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="异常处理">
 <meta name="twitter:card" content="summary">
     
     
@@ -40,7 +42,7 @@
     
     <title>
         
-            Hello World -
+            10分钟学会Java全局异常处理器 -
         
         WaitingForNothing
     </title>
@@ -388,7 +390,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hello World</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">10分钟学会Java全局异常处理器</h1>
                 </div>
             
             </div>
@@ -409,20 +411,51 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-06-20 14:25:06</span>
-        <span class="mobile">2024-06-20 14:25:06</span>
+        <span class="desktop">2024-06-30 18:52:30</span>
+        <span class="mobile">2024-06-30 18:52:30</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-06-20 14:25:06</span>
-            <span class="mobile">2024-06-20 14:25:06</span>
+            <span class="desktop">2024-06-30 18:55:55</span>
+            <span class="mobile">2024-06-30 18:55:55</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Java/">Java</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -444,19 +477,59 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+            <blockquote>
+<p> 本文默认读者已了解java基础知识</p>
+<p>如读者完全没有编程经验 建议先从基础开始实践 写过几行代码再回来阅读 </p>
+<p>若文章有误 甚至是巨大错误 希望得到您的批评与指正</p>
+<p>最后感谢您的阅读 祝您生活愉快</p>
+</blockquote>
+<h2 id="全局异常处理器三步走"><a href="#全局异常处理器三步走" class="headerlink" title="全局异常处理器三步走"></a>全局异常处理器三步走</h2><ul>
+<li>定义异常类</li>
+<li>spring配置异常类</li>
+<li>使用自定义异常</li>
+</ul>
+<p>目录结构</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">src/</span><br><span class="line">└── main/</span><br><span class="line">    ├── java/</span><br><span class="line">    │   └── &lt;your-<span class="keyword">package</span>&gt;/</span><br><span class="line">        │   ├── Application.java  <span class="comment">// 应用程序入口类</span></span><br><span class="line">        │   ├── common/           <span class="comment">// 通用类</span></span><br><span class="line">        │   │   ├── BaseResponse.java  <span class="comment">// 基础响应实体</span></span><br><span class="line">        │   │   └── ResultUtils.java    <span class="comment">// 结果工具类</span></span><br><span class="line">        │   ├── controller/       <span class="comment">// 控制器类</span></span><br><span class="line">        │   │   └── ...</span><br><span class="line">        │   ├── exception/        <span class="comment">// 异常相关类</span></span><br><span class="line">        │   │   ├── BusinessException.java</span><br><span class="line">        │   │   └── GlobalExceptionHandler.java</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+<h3 id="1-怎么定义异常类"><a href="#1-怎么定义异常类" class="headerlink" title="1. 怎么定义异常类"></a>1. 怎么定义异常类</h3><p>新建exception文件包</p>
+<p>新建exception&#x2F;BusinessException.java</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自定义异常类</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// 自定义的异常类要继承原生的RuntimeException</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BusinessException</span> <span class="keyword">extends</span> <span class="title class_">RuntimeException</span> &#123;</span><br><span class="line">    <span class="comment">// code 自定义返回码</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="type">int</span> code;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 下面是多个构造器 相当于给这个异常类封装了一些语法糖 调用时更符合自己的使用习惯</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BusinessException</span><span class="params">(<span class="type">int</span> code, String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">        <span class="built_in">this</span>.code = code;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BusinessException</span><span class="params">(ErrorCode errorCode)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(errorCode.getMessage());</span><br><span class="line">        <span class="built_in">this</span>.code = errorCode.getCode();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BusinessException</span><span class="params">(ErrorCode errorCode, String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">        <span class="built_in">this</span>.code = errorCode.getCode();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getCode</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> code;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+
+<h3 id="2-spring配置异常类"><a href="#2-spring配置异常类" class="headerlink" title="2. spring配置异常类"></a>2. spring配置异常类</h3><p>新建exception&#x2F;GlobalExceptionHandler.java</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 该注解让controller层的代码可以使用自定义异常类</span></span><br><span class="line"><span class="meta">@RestControllerAdvice</span></span><br><span class="line"><span class="comment">// 日志注解</span></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GlobalExceptionHandler</span> &#123;</span><br><span class="line">    <span class="comment">// 该注解指明当 throw new BusinessException时 会调用这个handler来处理</span></span><br><span class="line">    <span class="meta">@ExceptionHandler(BusinessException.class)</span></span><br><span class="line">    <span class="keyword">public</span> BaseResponse&lt;?&gt; businessExceptionHandler(BusinessException e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;businessException: &quot;</span> + e.getMessage(), e);</span><br><span class="line">        <span class="keyword">return</span> ResultUtils.error(e.getCode(), e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该注解指明当 throw new RuntimeException 会调用这个handler来处理</span></span><br><span class="line">    <span class="meta">@ExceptionHandler(RuntimeException.class)</span></span><br><span class="line">    <span class="keyword">public</span> BaseResponse&lt;?&gt; runtimeExceptionHandler(RuntimeException e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;runtimeException&quot;</span>, e);</span><br><span class="line">        <span class="keyword">return</span> ResultUtils.error(ErrorCode.SYSTEM_ERROR, e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>这里有人会问了 老铁 你的BaseResponse是什么  又是哪里冒出来的ResultUtils.error ？</p>
+<p>是的 这里我又定义了一个类用来处理返回信息 为啥呢 因为返回信息也需要统一处理 这就又需要配置一个类</p>
+<p>这里对这两个类稍加解释 但不是配置的重点 </p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// lombok注解 可自动生成</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="comment">//这是一个泛型类 意思是当使用这个类时再决定类型 而不是在编译时就决定类型 增加代码灵活性</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BaseResponse</span>&lt;T&gt; <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> code;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> T data;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String message;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 下面又是三个构造器 当作语法糖即可</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BaseResponse</span><span class="params">(<span class="type">int</span> code, T data, String message)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.code = code;</span><br><span class="line">        <span class="built_in">this</span>.data = data;</span><br><span class="line">        <span class="built_in">this</span>.message = message;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BaseResponse</span><span class="params">(<span class="type">int</span> code, T data)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>(code, data, <span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">BaseResponse</span><span class="params">(ErrorCode errorCode)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>(errorCode.getCode(), <span class="literal">null</span>, errorCode.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+
+
+<p>ResultUtils类相当于一个工具类 专门处理返回信息</p>
+<p>可以看到里面都是return new BaseResponse</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ResultUtils</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; BaseResponse&lt;T&gt; <span class="title function_">success</span><span class="params">(T data)</span> &#123;</span><br><span class="line">        <span class="comment">// 这里BaseResponse&lt;&gt;和BaseResponse含义一样 加&lt;&gt;是作为泛型使用</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">BaseResponse</span>&lt;&gt;(<span class="number">0</span>, data, <span class="string">&quot;ok&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 下面是error方法的语法糖 允许多种传参方式</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> BaseResponse <span class="title function_">error</span><span class="params">(ErrorCode errorCode)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">BaseResponse</span>&lt;&gt;(errorCode);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> BaseResponse <span class="title function_">error</span><span class="params">(<span class="type">int</span> code, String message)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">BaseResponse</span>(code, <span class="literal">null</span>, message);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> BaseResponse <span class="title function_">error</span><span class="params">(ErrorCode errorCode, String message)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">BaseResponse</span>(errorCode.getCode(), <span class="literal">null</span>, message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="3-使用自定义异常"><a href="#3-使用自定义异常" class="headerlink" title="3. 使用自定义异常"></a>3. 使用自定义异常</h3><p>返回controller层</p>
+<p>以下是一个注册用户的方法</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(&quot;/register&quot;)</span></span><br><span class="line"><span class="keyword">public</span> BaseResponse&lt;Long&gt; <span class="title function_">userRegister</span><span class="params">(<span class="meta">@RequestBody</span> UserRegisterRequest userRegisterRequest)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (userRegisterRequest == <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="comment">// 看到这里抛出了自定义的BusinessException异常 </span></span><br><span class="line">        <span class="comment">// 这个异常会被GlobalExceptionHandler捕获并处理</span></span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">BusinessException</span>(ErrorCode.PARAMS_ERROR);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">String</span> <span class="variable">userAccount</span> <span class="operator">=</span> userRegisterRequest.getUserAccount();</span><br><span class="line">    <span class="type">String</span> <span class="variable">userPassword</span> <span class="operator">=</span> userRegisterRequest.getUserPassword();</span><br><span class="line">    <span class="type">String</span> <span class="variable">checkPassword</span> <span class="operator">=</span> userRegisterRequest.getCheckPassword();</span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isAnyBlank(userAccount, userPassword, checkPassword)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">long</span> <span class="variable">result</span> <span class="operator">=</span> userService.userRegister(userAccount, userPassword, checkPassword);</span><br><span class="line">    <span class="keyword">return</span> ResultUtils.success(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>很简单吧 即使自定义了返回类 也只有几块代码 就能统一管理异常了 </p>
+<p>最后再复习一下这三个步骤</p>
+<ol>
+<li>定义异常类</li>
+<li>配置异常类</li>
+<li>使用异常类</li>
+</ol>
 
         </div>
 
@@ -464,18 +537,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Hello World</li>
+        <li><strong>标题:</strong> 10分钟学会Java全局异常处理器</li>
         <li><strong>作者:</strong> WaitingForNothing</li>
         <li><strong>创建于
-                :</strong> 2024-06-20 14:25:06</li>
+                :</strong> 2024-06-30 18:52:30</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-06-20 14:25:06
+                    :</strong> 2024-06-30 18:55:55
             </li>
         
         <li>
-            <strong>链接:</strong> https://996136583.github.io/2024/06/20/hello-world/
+            <strong>链接:</strong> https://996136583.github.io/2024/06/30/10mins-learn-how-to-use-globalhandler/
         </li>
         <li>
             <strong>
@@ -494,27 +567,39 @@
         
 
         
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Java/">#Java</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">#异常处理</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
 
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/06/30/10mins-learn-how-to-use-globalhandler/"
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/06/20/hello-world/"
                         >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">10分钟学会Java全局异常处理器</span>
-                                <span class="post-nav-item">上一篇</span>
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </a>
                     </div>
-                
                 
             </div>
         
@@ -571,8 +656,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">Hello World</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <div class="page-title">10分钟学会Java全局异常处理器</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8%E4%B8%89%E6%AD%A5%E8%B5%B0"><span class="nav-text">全局异常处理器三步走</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%80%8E%E4%B9%88%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E7%B1%BB"><span class="nav-text">1. 怎么定义异常类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-spring%E9%85%8D%E7%BD%AE%E5%BC%82%E5%B8%B8%E7%B1%BB"><span class="nav-text">2. spring配置异常类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8"><span class="nav-text">3. 使用自定义异常</span></a></li></ol></li></ol>
 
     </div>
 </div>
